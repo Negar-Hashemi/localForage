@@ -31,7 +31,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
-          npm install -g PhantomJS
+          npm install -g phantomjs
 
       - name: Testing on OS (${{ matrix.os }}) with Node.js (version ${{ matrix.node-version }}) attempt ${{ matrix.attempt }}
         run: |
